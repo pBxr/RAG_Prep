@@ -1,0 +1,19 @@
+paths:
+  data_raw: RAG_Test/data/#your_raw_source_files_folder_name#/
+  data_chunks: RAG_Test/data/processed/
+  env_dir: RAG_Test/.env
+  dataBase_dir: RAG_Test/chromadb/
+  dataBase_name: #your_project_database_name#
+  metadata: RAG_Test/configs/metadataProject.json
+settings:
+  file_extensions: 
+    - .xml
+    #- .txt
+    #- .md
+  chunk_size: 1000
+  chunk_overlap: 200
+  log_ratio_file: 1
+  log_ratio_chunk: 100
+  embedding-model: 'qwen3-embedding:4b'
+  generation-model: 'gpt-oss:120b'
+  dimension_embedding_vector: 2560 #depends on the model
